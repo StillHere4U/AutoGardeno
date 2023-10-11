@@ -26,7 +26,7 @@ byte getTemperature(float *temperature, byte reset_search, OneWire &ds) {
     return INVALID_ADDRESS;
   }
  
-  /* Vérifie qu'il s'agit bien d'un DS18B20 */
+  /* Vérifie qu'il s'agit bien d'un DS18B20 okok*/
   if (addr[0] != 0x28) {
     // Mauvais type de capteur
     return INVALID_SENSOR;
